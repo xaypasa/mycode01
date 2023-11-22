@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: gray;
+}
+.menu {
+    background-color: white;
+    padding: 10px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li a{
+    color: #6b6b6b;
+    text-decoration: none;
+    font-size: 20px;
+}
+.flex {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.bg-image {
+    background-image: url('https://images.unsplash.com/photo-1524511498335-b0ed6b8e9a69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2713&q=80');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Saysettha OT';
+    color: white;
+    border-bottom-right-radius: 300px;
+}
+.bg-green {
+    background-color: rgba(0, 128, 0, 0.637);
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1; 
+    border-bottom-right-radius: 300px;
+    position: absolute;
+}
+.content {
+    z-index: 2;
+    position: absolute;
+}
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 3;
+    border-radius: 50%;
+    bottom: -50px;
+    left: -20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="flex w-full">
+      <!-- menu items -->
+      <article class="flex-grow">
+        <nav>
+          <ul class="tag flex">
+            <li>Breakfast</li>
+            <li>Lunch</li>
+          </ul>
+        </nav>
+
+        <ul class="menu-list" id="menu">
+          <li>
+            <img
+              width="100"
+              src="https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
+              alt="Pizza"
+            />
+            <h2>Pizza</h2>
+            <p>$4</p>
+          </li>
+          <li>
+            <img
+              width="100"
+              src="https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
+              alt="Pizza"
+            />
+            <h2>Pizza</h2>
+            <p>$4</p>
+          </li>
+        </ul>
+      </article>
+      <!-- end menu items -->
+
+      <article class="pos-rigth">
+        <div>
+          <button>+ Add customer</button>
+        </div>
+
+        <ul>
+          <li class="flex">
+            <div class="flex flex-grow">
+              <img
+                width="60"
+                src="https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
+                alt="Pizza"
+              />
+              <h2>Pizza</h2>
+            </div>
+            <div>
+              <span>$4</span>
+              <button>x</button>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+    <script src="pos.js"></script>
+  </body>
+</html>

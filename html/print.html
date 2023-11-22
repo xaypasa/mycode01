@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            .hide-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bidigo.ltd</h1>
+    <h4>Bill ID:100</h4>
+    <h4>Bill Date: 2021-08-01</h4>
+    <table border="4">
+        <tr>
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>1</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <button class="hide-print" onclick="printbill()">Print</button>
+    <script>
+        function printbill(){
+            window.print();
+        }
+    </script>
+</body>
+</html>

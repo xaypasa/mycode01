@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lao', sans-serif; 
+    text-decoration: none;
+}
+body{
+    background-color: dimgray;
+}
+.good {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(239, 126, 20, 0.826);
+    padding: 10px; 
+    align-items: center;
+
+}
+.good .img1{
+    padding: 5px;
+    width: 200px;
+    margin-right: 300px;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+.flex li{
+    padding: 0 10px;
+    position: relative;
+}
+.flex a:hover{
+    color: black;
+    font-weight: bolder;
+}
+.bg-image{
+    background-image: url(/maxresdefault.jpg);
+   height: 800px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.war h1{
+    color: rgb(254, 255, 254);
+}
+.war a{
+    color: rgb(248, 3, 3);
+}
+.war button{
+    color: rgb(248, 3, 3);
+    background-color: rgba(240, 248, 255, 0.47);
+    padding: 2px 15px;
+    border-radius: 500px;
+    border:none;
+}
+button:active{
+    transform: scale(0.7);
+}
+.good div{
+    margin-left: 100px;
+}
+.war2{
+    background-color: rgba(144, 210, 147, 0.395);
+    height: 800px;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    border-bottom-right-radius: 300px;
+}
+.e:hover{
+    color: black;
+
+}
+.war{
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    font-size: 150%;
+}
+.grid{
+    display: grid;
+}
+.col-2{
+    grid-template-columns: 1fr 1fr;
+}
+.border{
+    background-color: antiquewhite;
+    border: 5px solid;
+}
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    z-index: 3;
+    border-radius: 50%;
+    bottom: 0;
+    transition: all 1s;
+}
+.circle:hover{
+    background-color: rgb(230, 23, 23);
+    border-radius: 0;
+    left: 50px;
+    rotate: 45deg;
+}
+.box{
+    background-color: rgba(181, 32, 15, 0.838);
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call API</title>
+    <style>
+        .grid-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .grid-2 img {
+            width: 100%;
+        }
+        .grid-2 img:hover{
+            scale: 130%;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="display" class="grid-2"></div>
+
+    <script>
+       async function getProduct(){
+            try {
+                const req = await fetch('https://dummyjson.com/products')
+                const res = await req.json()
+                console.log(res);
+
+                const display = document.getElementById('display')
+                display.innerHTML = ''
+                let str = ''
+                res.products.forEach(e => {
+                    str += `
+                    <div>
+                        <img src="${e.thumbnail}" >
+                        <h1>${e.title}</h1>
+                        <h2>${e.price}</h2>    
+                    </div>
+                    `
+                    display.innerHTML = str
+                });
+                
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        getProduct();
+
+        const student = [
+            {id:'001', name: 'Jon'},
+            {id:'002', name: 'Alex'}
+        ]
+        console.log(student[1].name)
+    </script>
+</body>
+</html>

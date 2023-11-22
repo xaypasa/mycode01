@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello js</title>
+</head>
+<body>
+    <input type="text" id="txtName" placeholder="Eenter your name">
+    <button onclick="good()">Say Hi</button>
+    
+    <script>
+        document.writeln('Hello');
+        document.write('This is my first java coding');
+        /*alert('Hi')
+        confirm('Are you sure?')
+        prompt('What is your name?')
+        console.log('Fuck')*/
+        console.error('error what are you doing?')
+        console.warn('your mom dose not exis')
+
+        var age = 20
+        document.write(age)
+        console.log(age)
+        let name = 'Xay'
+        console.log(name)
+        name = 'Yai'
+        console.log(name)
+        document.write('<br>:')
+        document.write(typeof age)
+        document.write('<br>')
+        document.write(typeof name)
+        if(age >= 18) {
+            document.write(name, 'ກິນເບຍໄດ້')
+        }else{
+            document.write(name, 'ກິນບໍ່ໄດ້')
+        }
+        document.write('<br>')
+        const PI = 3.14
+        document.write(3.14)
+        document.write('<br>')
+        /*PI = 3.10
+        document.write(PI)*/
+        let isUser = true;
+        let isAdmin = !isUser;
+        document.write(isUser)
+        document.write('<br>')
+        document.write(isAdmin)
+        let colors = ['red', 'gree', 'blue', 'purple',1]
+        document.write(colors[1])
+        
+        let student = {
+            name: 'Yai',
+            age: 18,
+        }
+        document.write('<br>')
+        document.write(student.age)
+        document.write('<br>')
+        document.write(student.name)
+
+        function good(){
+            const name = document.getElementById('txtName').value;
+            if(name =='') {
+                alert('Please Enter your name')
+                return
+            }else(name =='Ass')
+                alert('Is that your name?')
+                return
+           
+            alert('Hi. '+ name)
+        }
+    </script>
+</body>
+</html>
